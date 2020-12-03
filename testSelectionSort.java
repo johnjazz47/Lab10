@@ -31,7 +31,9 @@ class testSelectionSort {
 	sortedArr[4] = 10;
 
 
-
+  arr = x.basicSelectionSort(arr);
+	for(int i =0; i<arr.length; i++)
+	assertEquals(sortedArr[i], arr[i]);
 	}
 
 	public void testNegative() {
@@ -49,7 +51,9 @@ class testSelectionSort {
 		sortedArr[1] = -9;
 		sortedArr[0] = -10;
 
-
+    arr = x.basicSelectionSort(arr);
+    for(int i =0; i<arr.length; i++)
+    assertEquals(sortedArr[i], arr[i]);
 	}
 
 	public void testMixed() {
@@ -67,6 +71,10 @@ class testSelectionSort {
 		sortedArr[3] = 8;
 		sortedArr[4] = 10;
 
+    arr = x.basicSelectionSort(arr);
+    for(int i =0; i<arr.length; i++)
+    assertEquals(sortedArr[i], arr[i]);
+
 	}
 
 	public void testDuplicates() {
@@ -83,6 +91,10 @@ class testSelectionSort {
 		sortedArr[2] = 2;
 		sortedArr[3] = 2;
 		sortedArr[4] = 7;
+
+    arr = x.basicSelectionSort(arr);
+    for(int i =0; i<arr.length; i++)
+    assertEquals(sortedArr[i], arr[i]);
 
 
 	}
